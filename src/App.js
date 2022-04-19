@@ -16,8 +16,8 @@ class App extends React.Component {
     };
     getWeather = async (e) => {
         e.preventDefault();
-        const city = 'damascus';
-        const country = 'syria';
+        const city = e.target.elements.city.value;
+        const country = e.target.elements.country.value;
         const api = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}%2C${country}&appid=${API_KEY}`);
         const data = await api.json();
         if (city && country) {
@@ -39,7 +39,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <Form getWeather={this.getWeather}/>
+                <Form getWeather={this.getWeather} data={this.state}/>
                 <Weather/>
             </div>
         );
