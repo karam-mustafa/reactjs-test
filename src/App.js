@@ -39,8 +39,8 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <Form getWeather={this.getWeather} data={this.state}/>
-                <Weather/>
+                <Form getWeather={this.getWeather}/>
+                <Weather data={this.state}/>
             </div>
         );
     }
