@@ -1,4 +1,3 @@
-import './Main.css';
 import React from "react";
 import Home from "../Home";
 import Work from "../Work";
@@ -11,7 +10,7 @@ class Main extends React.Component {
 
     render() {
         return (
-            <div className="Main">
+            <div>
                 <Home/>
                 <Work/>
                 <Portfolio/>
