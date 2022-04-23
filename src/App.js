@@ -8,6 +8,7 @@ import Profile from "./components/Profile";
 import About from "./components/About";
 import SocialMedia from "./components/SocialMedia";
 import Footer from "./components/Footer";
+import Main from "./components/Main";
 
 class App extends React.Component {
 
@@ -15,12 +16,7 @@ class App extends React.Component {
         return (
             <div className="App">
                 <Navbar/>
-                <Home/>
-                <Work/>
-                <Portfolio/>
-                <Profile/>
-                <About/>
-                <SocialMedia/>
+                <Main/>
                 <Footer/>
             </div>
         );
