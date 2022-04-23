@@ -1,16 +1,20 @@
 import './App.css';
 import React from "react";
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Route,Routes} from "react-router-dom";
 import Main from "./components/Main";
 import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 
 class App extends React.Component {
 
     render() {
         return (
             <BrowserRouter>
-                <Route exact path='/' Componenet={Main}/>
-                <Route path='/contact' Componenet={Contact}/>
+               <Navbar/>
+               <Routes>
+                   <Route exact path='/' element={<Main />}/>
+                   <Route path='/contact' element={<Contact />}/>
+               </Routes>
             </BrowserRouter>
         );
     }
