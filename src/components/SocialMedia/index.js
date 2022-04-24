@@ -5,11 +5,11 @@ import {Icon, Social, SocialMediaComponent, SocialP, Span, SpanInfo} from "./sty
 const SocialMedia = () => {
     return (
         <SocialMediaComponent>
-            <Social>
+            <Social item={1}>
                 <Icon className="icon fa fa-facebook fa-lg"/>
                 <SocialP>
-                    <Span className="info1">Follow Me on</Span>
-                    <SpanInfo className="info2">Social Facebook</SpanInfo>
+                    <Span >Follow Me on</Span>
+                    <SpanInfo>Social Facebook</SpanInfo>
                 </SocialP>
             </Social>
         </SocialMediaComponent>
