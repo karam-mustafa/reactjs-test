@@ -14,15 +14,9 @@ export const Social = styled.div`
         width: 100%;
         float: none;
     }
-`;
-export const FacebookComponent = styled.div`
-    background: #3b5998;
-`;
-export const TwitterComponent = styled.div`
-    background: #498cbf;
-`;
-export const PinComponent = styled.div`
-    background: #cc2127;
+    background: ${props => props.item == 1 ? '#3b5998' : ''}
+    background: ${props => props.item == 2 ? '#498cbf' : ''}
+    background: ${props => props.item == 3 ? '#cc2127' : ''}
 `;
 
 export const Icon = styled.i`
