@@ -14,9 +14,9 @@ export const Social = styled.div`
         width: 100%;
         float: none;
     }
-    background: ${props => props.item == 1 ? '#3b5998' : ''}
-    background: ${props => props.item == 2 ? '#498cbf' : ''}
-    background: ${props => props.item == 3 ? '#cc2127' : ''}
+    background: ${props => props.item == 1 ? '#3b5998' : ''};
+    background: ${props => props.item == 2 ? '#498cbf' : ''};
+    background: ${props => props.item == 3 ? '#cc2127' : ''};
 `;
 
 export const Icon = styled.i`
