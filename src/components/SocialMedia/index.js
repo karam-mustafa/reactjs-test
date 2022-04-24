@@ -15,8 +15,8 @@ const SocialMedia = () => {
             <Social item={elm.id}>
                 <Icon className={elm.icon}/>
                 <SocialP>
-                    <Span>Follow Me on</Span>
-                    <SpanInfo>Social Facebook</SpanInfo>
+                    <Span>{elm.title}</Span>
+                    <SpanInfo>{elm.body}</SpanInfo>
                 </SocialP>
             </Social>
         );
