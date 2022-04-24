@@ -1,17 +1,30 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './style.css';
 import {Icon, Social, SocialMediaComponent, SocialP, Span, SpanInfo} from "./style";
+import axios from "axios";
 
 const SocialMedia = () => {
-    return (
-        <SocialMediaComponent>
-            <Social item={1}>
-                <Icon className="icon fa fa-facebook fa-lg"/>
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        axios.get('./js/data.json').then(res => setData(res.data.social));
+    }, []);
+
+    const dataToMap = data.map(elm => {
+        return (
+            <Social item={elm.id}>
+                <Icon className={elm.icon}/>
                 <SocialP>
-                    <Span >Follow Me on</Span>
+                    <Span>Follow Me on</Span>
                     <SpanInfo>Social Facebook</SpanInfo>
                 </SocialP>
             </Social>
+        );
+    });
+
+    return (
+        <SocialMediaComponent>
+            {dataToMap}
         </SocialMediaComponent>
     )
 };
