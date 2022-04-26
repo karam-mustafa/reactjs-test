@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const AboutSection =  styled.div`
-    height: 500px;
+    height: 600px;
     background: url('../../images/creative/about-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -16,7 +16,7 @@ export const AboutSection =  styled.div`
 `;
 
 export const AboutInfo = styled.div`
-    padding-top: 100px;
+    padding-top: 50px;
     width: 50%;
     float: right;
     @media (max-width:991px) {
