@@ -10,7 +10,10 @@ export const Social = styled.div`
     float: left;
     box-sizing: border-box;
     padding: 100px 0 100px 60px;
-    
+    @media (max-width:991px) {
+        width: 100%;
+        float: none;
+    }
 `;
 export const FacebookComponent = styled.div`
     background: #3b5998;
