@@ -5,21 +5,18 @@ export const SocialSection = styled.div`
     overflow: hidden
 `;
 
-.social-media .social {
+export const Social = styled.div`
     width: 33.33%;
     float: left;
     box-sizing: border-box;
     padding: 100px 0 100px 60px
-}
-
-
-.social-media .social.face {
+`;
+export const FacebookComponent = styled.div`
     background: #3b5998;
-}
-
-.social-media .social.twitter {
+`;
+export const TwitterComponent = styled.div`
     background: #498cbf;
-}
+`;
 
 .social-media .social.pin {
     background: #cc2127;
