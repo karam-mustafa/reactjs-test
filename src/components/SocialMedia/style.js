@@ -9,7 +9,8 @@ export const Social = styled.div`
     width: 33.33%;
     float: left;
     box-sizing: border-box;
-    padding: 100px 0 100px 60px
+    padding: 100px 0 100px 60px;
+    
 `;
 export const FacebookComponent = styled.div`
     background: #3b5998;
@@ -37,19 +38,11 @@ export const SocialP = styled.p`
     font-size: 20px;
     color: #fff
 `;
-
-.social-media .social p span {
+export const Span = styled.span`
     display: block;
     margin-bottom: 8px
-}
-
-.social-media .social p span.info2 {
+`;
+export const SpanInfo = styled.span`
     font-weight: normal
-}
+`;
 
-@media (max-width:991px) {
-.social-media .social {
-        width: 100%;
-        float: none;
-    }
-}
