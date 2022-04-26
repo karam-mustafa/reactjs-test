@@ -6,11 +6,13 @@ export const AboutSection =  styled.div`
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    
     @media (max-width:991px) {
         width: 100%;
         padding-top: 10px;
         float: none
     }
+    
 `;
 
 export const AboutInfo = styled.div`

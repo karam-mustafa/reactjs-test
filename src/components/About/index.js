@@ -1,6 +1,6 @@
 import React from "react";
 import './style.css';
-import {AboutDir, AboutDirP, AboutInfo, AboutSection, AboutSpan, AboutTitle} from "./style";
+import {AboutDir, AboutDirA, AboutDirP, AboutInfo, AboutSection, AboutSpan, AboutTitle} from "./style";
 
 const About = () => {
     return (
@@ -10,8 +10,8 @@ const About = () => {
                     <AboutTitle><AboutSpan>This is</AboutSpan> Me</AboutTitle>
                     <AboutDir>Creative Director</AboutDir>
                     <AboutDirP>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim est <a
-                        href="#">explicabo</a> maxime quibusdam quaerat nihil aliquid aperiam deleniti, repellendus
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim est <AboutDirA
+                        href="#">explicabo</AboutDirA> maxime quibusdam quaerat nihil aliquid aperiam deleniti, repellendus
                         dolorum. Possimus nisi cupiditate ad veritatis?
                     </AboutDirP>
                     <AboutDirP>
