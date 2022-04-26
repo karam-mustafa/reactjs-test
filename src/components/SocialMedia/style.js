@@ -17,12 +17,11 @@ export const FacebookComponent = styled.div`
 export const TwitterComponent = styled.div`
     background: #498cbf;
 `;
-
-.social-media .social.pin {
+export const PinComponent = styled.div`
     background: #cc2127;
-}
+`;
 
-.social-media .social .icon {
+export const Icon = styled.i`
     width: 50px;
     height: 50px;
     background: #fff;
@@ -31,14 +30,13 @@ export const TwitterComponent = styled.div`
     color: #888;
     float: left;
     margin-right: 10px
-}
-
-.social-media .social p {
+`;
+export const SocialP = styled.p`
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
     color: #fff
-}
+`;
 
 .social-media .social p span {
     display: block;
