@@ -32,43 +32,25 @@ export const InputText = styled(Input)`
     width:49%;
 `;
 
+export const InputEmail = styled(Input)`
+    float: right;
+    width:49%;
+`;
 
-.drop form .form-input input[type=text] {
-    float: left
-}
+export const InputExp = styled(Input)`
+    width:100%;
+`;
 
-.drop form .form-input input[type=email] {
-    float: right
-}
-
-.drop form input.sub {
-    width: 100%;
-}
-
-.drop form textarea {
+export const TextArea = styled.textarea`
     width: 100%;
     outline: 0;
     background: #ccc
-}
+`;
 
-.drop form input[type=submit] {
+export const Submit = styled.textarea`
     width: 60%;
     background: #fff;
     border: 1px solid #ccc;
     color: #888;
     cursor: pointer
-}
-
-@media (max-width:575px) {
-.drop .drop-title {
-        font-size: 40px
-    }
-
-.drop form .form-input input {
-        width: 100%
-    }
-
-.drop form {
-        width: 90%
-    }
-}
+`;
