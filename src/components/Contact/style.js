@@ -23,20 +23,15 @@ export const Input = styled.input`
     padding: 5px;
     margin-bottom: 10px
 `;
-export const FormInput = styled.input`
-    box-sizing: border-box;
-    outline: 0;
-    padding: 5px;
-    margin-bottom: 10px
+export const FormInput = styled.div`
+    overflow: hidden
 `;
 
-.drop form .form-input {
-    overflow: hidden
-}
+export const InputText = styled(Input)`
+    float: left;
+    width:49%;
+`;
 
-.drop form .form-input input {
-    width: 49%;
-}
 
 .drop form .form-input input[type=text] {
     float: left
