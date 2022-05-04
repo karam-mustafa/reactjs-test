@@ -9,26 +9,26 @@ export const Title = styled.h2`
     text-align: center
 `;
 
-.drop .drop-title {
-    font-size: 60px;
-    margin-bottom: 30px
-}
-
-.drop .drop-title span {
+export const Span = styled.span`
     font-weight: normal
-}
-
-.drop form {
+`;
+export const Form = styled.form`
     width: 70%;
     margin: auto;
-}
+`;
 
-.drop form input {
+export const Input = styled.input`
     box-sizing: border-box;
     outline: 0;
     padding: 5px;
     margin-bottom: 10px
-}
+`;
+export const FormInput = styled.input`
+    box-sizing: border-box;
+    outline: 0;
+    padding: 5px;
+    margin-bottom: 10px
+`;
 
 .drop form .form-input {
     overflow: hidden
