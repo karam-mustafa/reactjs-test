@@ -28,3 +28,23 @@ export const InfoComponent = styled.h4`
     color: #eb5424;
     margin-bottom: 20px;
 }`;
+export const PDescriptionComponent = styled.p`
+    font-size: 20px;
+    line-height: 1.5;
+    color: #888;
+    margin-bottom: 20px
+}`;
+export const ButtonComponent = styled.button`
+    background: #eb5424;
+    color: #fff;
+    font-size: 18px;
+    width: 150px;
+    border: 0;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    &:hover {
+            background: #fff;
+            color: #eb5424
+    }
+}`;
