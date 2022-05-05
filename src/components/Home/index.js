@@ -5,7 +5,7 @@ import {HomeComponent} from "./style";
 const Home = () => {
     return (
         <HomeComponent>
-            <div className="container">
+            <ContainerComponent>
                 <div className="home-information">
                     <h2 className="home-title margin-bottom">Karam Mustafa</h2>
                     <h4 className="home-info">Creative Director</h4>
@@ -15,7 +15,7 @@ const Home = () => {
                     </p>
                     <button className="home-btn">Let's Begin</button>
                 </div>
-            </div>
+            </ContainerComponent>
         </HomeComponent>
 
     )
