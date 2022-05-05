@@ -8,7 +8,7 @@ export const HomeComponent = styled.div`
     text-align: center;
     position: relative;
 }`;
-export const InformationComponent = styled.div`
+export const HomeInformationComponent = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,23 +18,24 @@ export const ContainerComponent = styled.div`
     width: 85%;
     margin: auto;
 }`;
-export const TitleComponent = styled.h2`
+export const HomeTitleComponent = styled.h2`
     font-size: 60px;
     font-weight: bold;
     color: #5e5e5e;
 }`;
-export const InfoComponent = styled.h4`
+export const HomeInfoComponent = styled.h4`
     font-size: 35px;
     color: #eb5424;
     margin-bottom: 20px;
 }`;
-export const PDescriptionComponent = styled.p`
+export const HomeDescriptionComponent = styled.p`
     font-size: 20px;
     line-height: 1.5;
     color: #888;
     margin-bottom: 20px
 }`;
-export const ButtonComponent = styled.button`
+
+export const HomeButtonComponent = styled.button`
     background: #eb5424;
     color: #fff;
     font-size: 18px;
