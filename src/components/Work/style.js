@@ -32,8 +32,14 @@ export const Icon = styled.i`
 `;
 
 export const PartTitle = styled.h4`
-   color: #888;
+    color: #888;
     margin-bottom: 20px
+`;
+
+export const PartDesc = styled.p`
+    font-size: 14px;
+    color: #888;
+    padding: 20px
 `;
 
 export const Line = styled.hr`
