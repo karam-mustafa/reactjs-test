@@ -1,12 +1,12 @@
 import React from "react";
 import './style.css';
-import {Icon, Line, Part, PartDesc, PartTitle, Span, Title, Work} from "./style";
+import {Icon, Line, Part, PartDesc, PartTitle, Span, Title, WorkComponent} from "./style";
 import {ContainerComponent} from "../Home/style";
 
 const Work = () => {
     return (
-        <Work>
-            <ContainerComponent>
+        <WorkComponent>
+            <div className='container'>
                 <Title><Span>My</Span> Work</Title>
                 <Part>
                     <Icon className="icon fa fa-chain fa-2x"/>
@@ -17,8 +17,8 @@ const Work = () => {
                             ipsam! Voluptas.
                         </PartDesc>
                 </Part>
-            </ContainerComponent>
-        </Work>
+            </div>
+        </WorkComponent>
     )
 };
 

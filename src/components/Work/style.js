@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Work = styled.div`
+export const WorkComponent = styled.div`
     height: auto;
     padding: 50px 0;
     overflow: hidden;
@@ -10,7 +10,7 @@ export const Title = styled.h2`
     font-size: 60px;
 `;
 
-export const Span = styled.h2`
+export const Span = styled.span`
     font-weight: normal
 `;
 
