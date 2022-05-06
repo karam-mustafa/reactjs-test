@@ -1,23 +1,42 @@
 import React, {Component} from "react";
 import './style.css';
+import axios from 'axios';
+
 import {Icon, Line, Part, PartDesc, PartTitle, Span, Title, WorkComponent} from "./style";
 import {ContainerComponent} from "../Home/style";
 
-class  Work extends Component {
+class Work extends Component {
+    state = {
+        works: [],
+    };
+
+    componentDidMount() {
+        axios.get('./js/data.json').then(res => this.setState({
+            works: res.data.works,
+        }))
+    }
+
     render() {
+
+        const {works} = this.state;
+
+        const workList = works.map(item => {
+            return (
+                <Part first={item.id} key={item.id}>
+                    <Icon className={item.icon_name}/>
+                    <PartTitle>{item.title}</PartTitle>
+                    <Line/>
+                    <PartDesc>
+                        {item.body}
+                    </PartDesc>
+                </Part>
+            );
+        })
         return (
             <WorkComponent>
                 <div className='container'>
                     <Title><Span>My</Span> Work</Title>
-                    <Part first={1}>
-                        <Icon className="icon fa fa-chain fa-2x"/>
-                        <PartTitle>Mobile Ux</PartTitle>
-                        <Line/>
-                        <PartDesc>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea
-                            ipsam! Voluptas.
-                        </PartDesc>
-                    </Part>
+                    {workList}
                 </div>
             </WorkComponent>
         );
