@@ -1,8 +1,10 @@
 import React from "react";
 import './style.css';
+import {WorkComponent} from "./style";
+
 const Work = () => {
     return (
-        <div className="work">
+        <WorkComponent>
             <div className="container">
                 <h2 className="work-title"><span>My</span> Work</h2>
                 <div className="part first">
@@ -34,7 +36,7 @@ const Work = () => {
                         </p>
                 </div>
             </div>
-        </div>
+        </WorkComponent>
     )
 };
 
