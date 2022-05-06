@@ -3,7 +3,6 @@ import './style.css';
 import axios from 'axios';
 
 import {Icon, Line, Part, PartDesc, PartTitle, Span, Title, WorkComponent} from "./style";
-import {ContainerComponent} from "../Home/style";
 
 class Work extends Component {
     state = {
