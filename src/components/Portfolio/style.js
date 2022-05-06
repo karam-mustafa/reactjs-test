@@ -8,8 +8,12 @@ export const PortfolioSection = styled.div`
 export const Title = styled.h2`
     text-align: center;
     font-size: 35px
-`
-;
+`;
+
+export const Span = styled.span`
+    font-weight: normal
+`;
+
 export const List = styled.ul`
     list-style: none;
     text-align: center;
@@ -18,5 +22,7 @@ export const List = styled.ul`
 export const ListItem = styled.li`
     display: inline-block;
     width: 100px;
-    padding: 10px
+    padding: 10px;
+    background: ${props => props.active ? '#eb5424' : 'unset'};
+    color: ${props => props.active ? '#fff' : 'unset'};
 `;
