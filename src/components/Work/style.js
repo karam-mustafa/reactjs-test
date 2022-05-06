@@ -23,7 +23,7 @@ export const Part = styled.div`
     border: 1px solid #888;
     box-sizing: border-box;
     text-align: center;
-    margin-left: 5%
+    margin-left: ${props => props.first === 1 ? '0' : '5%'}
 `;
 
 export const Icon = styled.i`
@@ -32,7 +32,8 @@ export const Icon = styled.i`
 `;
 
 export const PartTitle = styled.h4`
-    color: #888;
+    font-size: 25px;
+    color: #eb5424;
     margin-bottom: 20px
 `;
 

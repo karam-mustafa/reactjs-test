@@ -42,8 +42,7 @@
 
 .work .part .line {
     width: 60%;
-    margin: auto;
-    margin-bottom: 20px
+    margin: auto auto 20px;
 }
 
 .work .part .part-desc {

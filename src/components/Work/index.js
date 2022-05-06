@@ -8,7 +8,7 @@ const Work = () => {
         <WorkComponent>
             <div className='container'>
                 <Title><Span>My</Span> Work</Title>
-                <Part>
+                <Part first={1}>
                     <Icon className="icon fa fa-chain fa-2x"/>
                     <PartTitle>Mobile Ux</PartTitle>
                     <Line/>
