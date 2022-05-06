@@ -1,18 +1,18 @@
 import React from "react";
 import './style.css'
-import {PortfolioSection} from "./style";
+import {List, ListItem, PortfolioSection, Title} from "./style";
 
 const Portfolio = () => {
     return (
         <PortfolioSection>
-            <h2 className="portfolio-title"><span>My</span> Portfolio</h2>
-            <ul className="portfolio-list">
-                <li className="portfolio-item active">All</li>
-                <li className="portfolio-item">HTML</li>
-                <li className="portfolio-item">Photoshop</li>
-                <li className="portfolio-item">Wordpress</li>
-                <li className="portfolio-item">Mobile</li>
-            </ul>
+            <Title><span>My</span> Portfolio</Title>
+            <List className="portfolio-list">
+                <ListItem>All</ListItem>
+                <ListItem>HTML</ListItem>
+                <ListItem>Photoshop</ListItem>
+                <ListItem>Wordpress</ListItem>
+                <ListItem>Mobile</ListItem>
+            </List>
 
             <div className="box">
                 <div>
