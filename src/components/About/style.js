@@ -26,19 +26,12 @@ export const AboutDir = styled.h4`
     color: #eb5424;
     margin-bottom: 20px
 `;
-
-
-.creative .creative-info .info-dir {
-    font-size: 40px;
-    color: #eb5424;
-    margin-bottom: 20px
-}
-
-.creative .creative-info .info-desc {
+export const AboutDir = styled.p`
     color: #000;
     margin-bottom: 15px;
     line-height: 1.8
-}
+`;
+
 
 .creative .creative-info .info-desc a {
     text-decoration: none
