@@ -1,12 +1,12 @@
 import React from "react";
 import './style.css';
-import {AboutSection} from "./style";
+import {AboutInfo, AboutSection} from "./style";
 
 const About = () => {
     return (
         <AboutSection>
             <div className="container">
-                <div className="creative-info">
+                <AboutInfo>
                     <h2 className="info-title"><span>This is</span> Me</h2>
                     <h4 className="info-dir">Creative Director</h4>
                     <p className="info-desc">
@@ -20,7 +20,7 @@ const About = () => {
                         veritatis?
                     </p>
                 </div>
-            </div>
+            </AboutInfo>
         </AboutSection>
 
     )
