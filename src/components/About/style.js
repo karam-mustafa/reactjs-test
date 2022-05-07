@@ -13,14 +13,18 @@ export const AboutInfo = styled.div`
     width: 50%;
     float: right;
 `;
-.creative .creative-info .info-title {
+
+export const AboutTitle = styled.h2`
     font-weight: bold;
     font-size: 50px
-}
-
-.creative .creative-info .info-title span {
+`;
+export const AboutSpan = styled.span`
     font-weight: normal
-}
+`;
+export const AboutDir = styled.h4`
+    font-weight: normal
+`;
+
 
 .creative .creative-info .info-dir {
     font-size: 40px;
