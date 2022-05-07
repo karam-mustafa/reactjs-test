@@ -1,8 +1,9 @@
 import React from "react";
 import './style.css';
+import {ContactSection} from "./style";
 const Contact = () => {
     return (
-        <div className="drop">
+        <ContactSection>
             <div className="container">
                 <h2 className="drop-title"><span>Drop </span>Me A line</h2>
                 <form action="">
@@ -15,7 +16,7 @@ const Contact = () => {
                     <input type="submit" value="Send Message"/>
                 </form>
             </div>
-        </div>
+        </ContactSection>
     )
 };
 
