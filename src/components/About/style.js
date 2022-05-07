@@ -22,7 +22,9 @@ export const AboutSpan = styled.span`
     font-weight: normal
 `;
 export const AboutDir = styled.h4`
-    font-weight: normal
+    font-size: 40px;
+    color: #eb5424;
+    margin-bottom: 20px
 `;
 
 
