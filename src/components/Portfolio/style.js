@@ -61,3 +61,5 @@ export const OverlaySpan = styled.span`
     cursor: pointer;
     border: 2px solid #eb5424;
 `;
+export const Box = styled.div`
+`;
