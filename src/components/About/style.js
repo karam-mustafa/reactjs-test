@@ -5,13 +5,21 @@ export const AboutSection =  styled.div`
     background: url('../images/creative/about-bg.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed
+    background-attachment: fixed;
+    @media (max-width:991px) {
+        width: 100%;
+        padding-top: 10px;
+        float: none
+    }
 `;
 
 export const AboutInfo = styled.div`
     padding-top: 100px;
     width: 50%;
     float: right;
+    @media (max-width:991px) {
+        font-size: 30px
+    }
 `;
 
 export const AboutTitle = styled.h2`
@@ -24,30 +32,16 @@ export const AboutSpan = styled.span`
 export const AboutDir = styled.h4`
     font-size: 40px;
     color: #eb5424;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    @media (max-width:991px) {
+    
+    }
 `;
-export const AboutDir = styled.p`
+export const AboutDirP = styled.p`
     color: #000;
     margin-bottom: 15px;
     line-height: 1.8
 `;
-
-
-.creative .creative-info .info-desc a {
+export const AboutDirA = styled.a`
     text-decoration: none
-}
-
-@media (max-width:991px) {
-.creative {
-        height: auto
-    }
-.creative .creative-info {
-        width: 100%;
-        padding-top: 10px;
-        float: none
-    }
-
-.creative .creative-info .info-dir {
-        font-size: 30px
-    }
-}
+`;

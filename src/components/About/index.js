@@ -1,9 +1,10 @@
 import React from "react";
 import './style.css';
+import {AboutSection} from "./style";
 
 const About = () => {
     return (
-        <div className="creative">
+        <AboutSection>
             <div className="container">
                 <div className="creative-info">
                     <h2 className="info-title"><span>This is</span> Me</h2>
@@ -20,7 +21,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
-        </div>
+        </AboutSection>
 
     )
 };
