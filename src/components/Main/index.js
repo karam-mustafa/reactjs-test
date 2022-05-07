@@ -14,7 +14,7 @@ class Main extends React.Component {
                 <Home/>
                 <Work/>
                 <Portfolio/>
-                <Profile/>
+                {/*<Profile/>*/}
                 <About/>
                 <SocialMedia/>
             </div>
