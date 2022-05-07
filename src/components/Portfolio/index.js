@@ -1,6 +1,6 @@
 import React from "react";
 import './style.css'
-import {List, ListItem, PortfolioSection, Span, Title} from "./style";
+import {Image, ImageWrapper, List, ListItem, Overlay, OverlaySpan, PortfolioSection, Span, Title} from "./style";
 
 const Portfolio = () => {
     return (
@@ -15,14 +15,14 @@ const Portfolio = () => {
             </List>
 
             <div className="box">
-                <div>
-                    <img src="images/Portfolio/portfolio-img1.jpg" alt=""/>
-                    <p className="overlay">
-                        <span>
+                <ImageWrapper>
+                    <Image src="images/Portfolio/portfolio-img1.jpg" alt=""/>
+                    <Overlay>
+                        <OverlaySpan>
                             Show Image
-                        </span>
-                    </p>
-                </div>
+                        </OverlaySpan>
+                    </Overlay>
+                </ImageWrapper>
             </div>
         </PortfolioSection>
 
